@@ -21,6 +21,7 @@ ActiveRecord::Base.configurations[:development] = {
 }
 
 ActiveRecord::Base.configurations[:production] = {
+  :adapter   => 'postgresql',
   :url       => ENV['HEROKU_POSTGRESQL_AMBER_URL']
 }
 
