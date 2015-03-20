@@ -36,7 +36,7 @@ class Hero < ActiveRecord::Base
           portrait = hero.portraits.create!(:url => url)
           begin
             portrait.remote_file_url = URI.unescape(url) # caters for utf-8 strings
-            portrait.save!
+            portrait.save
           rescue OpenURI::HTTPError => e
             puts e.message
             puts "Error retrieving #{url}"

@@ -6,7 +6,7 @@ This is the source code for the rubycommitters.org website.
 
 First clone the repo:
 
-    $ git clone git://github.com/tenderlove/rubycommitters.org.git
+    $ git clone git@github.com:fredwu/rubycommitters.org.git
     $ cd rubycommitters.org
 
 Then import committer data

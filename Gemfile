@@ -1,23 +1,25 @@
-source :rubygems
+source 'https://rubygems.org'
+ruby '2.1.5'
 
 # Project requirements
 gem 'rake'
-gem 'rack-flash'
-gem 'thin',                     :group => :development
+gem 'rack',         '~> 1.5.2'
+gem 'thin'
 
 # Component requirements
-gem 'slim',         '>= 0.8.3'
+gem 'slim',         '~> 3.0'
 gem 'sqlite3'
-gem 'activerecord', '~> 3.0.3', :require => 'active_record'
+gem 'activerecord', '~> 4.0',   :require => 'active_record'
 gem 'rack-cache',   '~> 1.0',   :require => 'rack/cache'
 gem 'mini_magick'
 gem 'carrierwave'
 gem 'sass'
 gem 'rdiscount'
+gem 'pry'
 
 # Test requirements
 gem 'rack-test',                :require => 'rack/test', :group => :test
 
 # Padrino
-gem 'sinatra',      '1.1.2',    :require => 'sinatra/base'
-gem 'padrino',      '0.9.20'
+gem 'sinatra',      '~> 1.4.5', :require => 'sinatra/base'
+gem 'padrino',      '~> 0.12.5'

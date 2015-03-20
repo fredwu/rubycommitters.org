@@ -1,7 +1,11 @@
 class RubyCommitters < Padrino::Application
+  use ConnectionPoolManagement
+
   register SassInitializer
   register Padrino::Mailer
   register Padrino::Helpers
+
+  enable :sessions
 
   Slim::Engine.set_default_options :pretty => true
 
