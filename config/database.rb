@@ -21,10 +21,7 @@ ActiveRecord::Base.configurations[:development] = {
 }
 
 ActiveRecord::Base.configurations[:production] = {
-  :adapter   => 'postgresql',
-  :database  => 'heroesofruby_production',
-  :host      => 'localhost',
-  :port      => 5432
+  :url       => ENV['HEROKU_POSTGRESQL_AMBER_URL']
 }
 
 ActiveRecord::Base.configurations[:test] = {
