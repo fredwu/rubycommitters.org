@@ -5,10 +5,10 @@ ruby '2.1.5'
 gem 'rake'
 gem 'rack',         '~> 1.5.2'
 gem 'thin'
+gem 'pg'
 
 # Component requirements
 gem 'slim',         '~> 3.0'
-gem 'sqlite3'
 gem 'activerecord', '~> 4.0',   :require => 'active_record'
 gem 'rack-cache',   '~> 1.0',   :require => 'rack/cache'
 gem 'mini_magick'

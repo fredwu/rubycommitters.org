@@ -14,18 +14,24 @@
 #   }
 #
 ActiveRecord::Base.configurations[:development] = {
-  :adapter => 'sqlite3',
-  :database => Padrino.root('db', "rubycommitters_development.db")
+  :adapter   => 'postgresql',
+  :database  => 'heroesofruby_development',
+  :host      => 'localhost',
+  :port      => 5432
 }
 
-ActiveRecord::Base.configurations[:production]  = {
-  :adapter => 'sqlite3',
-  :database => Padrino.root('db', "rubycommitters_production.db")
+ActiveRecord::Base.configurations[:production] = {
+  :adapter   => 'postgresql',
+  :database  => 'heroesofruby_production',
+  :host      => 'localhost',
+  :port      => 5432
 }
 
-ActiveRecord::Base.configurations[:test]        = {
-  :adapter => 'sqlite3',
-  :database => Padrino.root('db', "rubycommitters_test.db")
+ActiveRecord::Base.configurations[:test] = {
+  :adapter   => 'postgresql',
+  :database  => 'heroesofruby_test',
+  :host      => 'localhost',
+  :port      => 5432
 }
 
 # Setup our logger
